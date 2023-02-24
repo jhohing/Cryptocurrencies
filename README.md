@@ -13,7 +13,7 @@ The purpose of this project is to analyze cryptocurrency data using Unsupervised
 
 ### Elbow Curve
 
-![elbow_curve](https://github.com/Mishkanian/Cryptocurrencies/blob/main/images/elbow_curve.png)
+![elbow_curve](https://github.com/jhohing/Cryptocurrencies/blob/main/images/crypto_elbow_curve.png)
 
 From the elbow curve above, it can be determined that the optimal number of clusters is 4 (k=4). This information is used for specifying the number of clusters (n_clusters) when initializing the K-means model:
 ```python
@@ -22,7 +22,7 @@ model = KMeans(n_clusters=4, random_state=0)
 
 ### 3D Plot
 
-![3d_plot](https://github.com/Mishkanian/Cryptocurrencies/blob/main/images/3d_scatter_plot.png)
+![3d_plot](https://github.com/jhohing/Cryptocurrencies/blob/main/images/3D_scatter_plot.png)
 
 This 3D scatter plot with cluster is generated using the following code:
 
@@ -44,7 +44,7 @@ fig.show()
 
 ### hvTable
 
-![hv_table](https://github.com/Mishkanian/Cryptocurrencies/blob/main/images/hvTable.png)
+![hv_table](https://github.com/jhohing/Cryptocurrencies/blob/main/images/hvTable.png)
 
 The hvTable above displays all of the currently tradeable cryptocurrencies. This table is created using the hvplot.table() function.
 ```python
@@ -54,7 +54,7 @@ clustered_df.hvplot.table(columns)
 
 ### hvPlot (Scatter)
 
-![hv_plot](https://github.com/Mishkanian/Cryptocurrencies/blob/main/images/hv_Scatter_Plot.png)
+![hv_plot](https://github.com/jhohing/Cryptocurrencies/blob/main/images/hv_Scatter_Plot.png)
 
 The graph above is a scatter plot grouped by class. This is created using hvplot.scatter. See the code below:
 
